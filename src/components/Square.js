@@ -3,13 +3,13 @@ import React, { Component } from 'react'
 class Square extends Component {
 
 handleClick = () => {
-  this.state.xo(this.state.value)
+  this.props.handleGamePlay(this.props.index)
 }
 
   render() {
     return(
       <>
-        <div className="square" onClick={this.handleClick}>
+        <div className="square" onClick={this.handleClick}  >
           {this.props.value}
         </div>
       </>
