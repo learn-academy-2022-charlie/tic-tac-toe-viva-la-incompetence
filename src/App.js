@@ -28,11 +28,15 @@ class App extends Component {
       const [a, b, c] = lines[i];
       if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
         if (turn % 2 === 0) {
-        alert("YAY PLAYER X YOU WON");
-      } else  {
+        alert("YAY PLAYER X YOU WON"); 
+       
+        this.setState({squares: 0});
+      } else if (turn % 2 !== 0) {
         alert("YAY PLAYER O YOU WON");
-      }
-    }   
+        
+        this.setState({squares: 0});
+      } 
+    }  
   }
   return null;
 }
