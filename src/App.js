@@ -73,6 +73,7 @@ handleGamePlay = (index) => {
           )
         })}
         </div>
+        <footer>Coded by ~Mary and Collin~</footer>
       </>
     )
   }
