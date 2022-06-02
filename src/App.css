@@ -1,5 +1,38 @@
+body {
+  margin: 1rem;
+  text-align: center;
+  background: url(./img/chalkboard.jpg) fixed center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .square {
   height: 100px;
   width: 100px;
   border: 2px solid black;
+  font-family: 'chalkduster', fantasy; 
+  font-size: 50px;
+  color: white;
+  text-align:center;
+  vertical-align: middle;
+  line-height: 100px;
+}
+
+.game-board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 312px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'chalkduster', fantasy;
+  color: white;
+}
+
+footer {
+  margin-top: 30px;
+  color: rgb(68, 68, 68);
 }
